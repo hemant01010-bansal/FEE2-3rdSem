@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* width: 500px;
+            height: 600px; */
+            width: 50vw;
+            height: 80vh;
+            border: 2px solid rgb(61, 75, 76);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            /* justify-content: space-evenly; */
+            flex-wrap: wrap;
+        }
+        
+        .childBox{
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+        }
+
+        nav{
+            height: 10vh;
+            display: flex;
+            list-style-type: none;
+            padding: 0px 20px 0px 20px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+
+        .links{
+            display: flex;
+            gap: 15px;
+        }
+
+        nav li{
+            padding: 4px;
+            border-radius: 5px;
+        }
+
+        nav li:hover{
+            background-color: rgb(30, 33, 33);
+            color: white;
+        }
+
+        .chessBox{
+            width: 640px;
+            display: grid;
+            grid-template-columns: 60px 60px 60px 60px;
+        }
+
+        .box{
+            width: 60px;
+            height: 60px;
+            border: 2px solid black;
+        }
+
+        .blackColor{
+            background-color: black;
+        }
+
+        .carts{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        .cartImg img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div style="width: 100%; height: 100vh; background-color: aquamarine; display: flex; justify-content: center; align-items: center;">
+        <div>
+            <input style=" width: 20vw; height: 3vh;border: 2px solid black; border-radius: 5px; padding: 3px;" placeholder="Enter Amount"/><i class="fa-solid fa-heart" style="color: rgb(0, 0, 0); width: 20px; height: 30px;" title="Heart Shape"></i>
+        </div>
+    </div>
+    <div class="box">
+        <div class="childBox">1</div>
+        <div class="childBox">2</div>
+        <div class="childBox">3</div>
+        <div class="childBox">4</div>
+        <div class="childBox">5</div>
+        <div class="childBox">6</div>
+        <div class="childBox">7</div>
+        <div class="childBox">8</div>
+        <div class="childBox">9</div>
+        <div class="childBox">10</div>
+    </div>
+    <nav>
+        <li>Hemant Bansal</li>
+        <div class="links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blogs</li>
+        </div>
+    </nav> -->
+
+    <!-- Made a Chess Box -->
+
+    <div class="chessBox">
+        <div class="box"></div>
+        <div class="box blackColor"></div>
+        <div class="box"></div>
+        <div class="box blackColor"></div>
+        <div class="box blackColor"></div>
+        <div class="box"></div>
+        <div class="box blackColor"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box blackColor"></div>
+        <div class="box"></div>
+        <div class="box blackColor"></div>
+        <div class="box blackColor"></div>
+        <div class="box"></div>
+        <div class="box blackColor"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- made shopping cart like of amazon -->
+     <div class="shoppingCart">
+        <div class="carts">
+            <div class="cartImg">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            </div>
+            <div class="cartDetails">
+                <h1>Laptop</h1>
+                <div class="cartPrice">
+                    <li>60,000</li>
+                    <li>07/07/2026</li>
+                </div>
+            </div>
+        </div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+        <div class="carts"></div>
+
+     </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!-- 06/07/2026 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .info{
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            padding: 5px 0px 0px 5px;
+            font-size: 20px;
+            font-weight: 600;
+            display: grid;
+            place-items: center;
+            background-image: url("https://images.unsplash.com/photo-1783313207203-a542ee3b849e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            color: white;
+        }
+        .moreInfo{
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- <progress value="50" max="200"></progress>
+    <details>
+        Cascading style sheets
+        <summary>CSS</summary>
+    </details> -->
+
+    <!-- to use css we have 3 options inline, internal, external -->
+    <!-- inline > internal > external  , preference -->
+    <!-- id are like roll no, each has diff one -->
+    <!-- class are like class no, many student has same class no. -->
+    <!-- id>class>tag>universal -->
+
+    <!-- <div class="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div class="moreInfo">
+            some text
+        </div>
+    </div> -->
+    <!-- vertical margin collapse and take the highest value -->
+    <!-- horizontal margin doesn't collapse and total= sum of margins -->
+    <!-- 1vw = 1 percent of viewport width -->
+
+    <div class="part1" style="
+    height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    ">
+        <h1>Welcome to my website.</h1>
+        <p style="font-size: 18px; padding-top: 8px;">Made by <strong>Hemant Bansal</strong></p>
+    </div>
+
+    <div class="part1Img" style="
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1783313207203-a542ee3b849e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+     background-attachment: fixed;
+    "></div>
+
+
+    <div class="about" style="
+    height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-sizing: border-box;
+    ">
+        <h1>About</h1>
+        <p style="padding: 10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, reprehenderit. Necessitatibus ratione nam eligendi dicta aperiam amet nostrum deleniti tempore reprehenderit minima nihil molestias impedit, placeat cumque blanditiis dolor delectus.</p>
+    </div>
+
+    <div class="aboutImg" style="
+    height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-sizing: border-box;
+     background-image: url('https://plus.unsplash.com/premium_photo-1730466975768-b02e556c8884?q=80&w=1558&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+     background-attachment: fixed;
+    "></div>
+
+    <div class="thankYou"  style="
+    height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     ">
+        <h1>Thank You</h1>
+    </div>
+</body>
+</html>

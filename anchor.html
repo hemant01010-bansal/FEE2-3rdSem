@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./myPage.html">Go to Home</a><br><hr>
+    <a href="#myprojects">Show Projects</a>
+    <div class="myprojects" id="myprojects" style="margin-top: 500px;">
+        <h1>Projects</h1>
+        <p> my projects photos</p>
+        <p> my projects video</p>
+    </div>
+
+    <div class="myGraduation" style="margin-top: 500px;">
+        <h1>Chitkara University</h1>
+        <h1>2nd Year</h1>
+    </div>
+
+    <iframe src="https://www.wikipedia.org/"></iframe>
+    <ol class="ordList" type="A" start="5"> <!--use i for roman numbers-->
+        <li>fruits</li>
+        <li>nuts</li>
+        <li>vegetables</li>
+    </ol>
+
+    <!-- <table border="2">
+        <tr>
+            <th>
+                name
+            </th>
+            <th>
+                RollNo.
+            </th>
+        </tr>
+
+        <tr>
+            <td>Hemant</td>
+            <td>0293</td>
+        </tr>
+        
+        <tr>
+            <td>aftab</td>
+            <td>0234</td>
+        </tr>
+    </table> -->
+
+    <table border="4">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td colspan="2">9</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <!-- to download file or anything write 'download' in anchor tag(<a>)-->
+    <!-- semantic tags -> whose name defines their meaning  like header, footer, main, nav, section-->
+
+    <nav>
+        <li><strong>Hemant Bansal</strong></li>
+        <a href="#About">About</a>
+        <a>Resume</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Grades">Grades</a>
+    </nav>
+    <main>
+        <div id="About">
+        My name is Hemant Bansal, pursuing Computer Science from Chitkara University
+        <div>Chitkara University</div>
+        <div>Govt. Senior Sec. School</div>
+        </div>
+        <div id="Resume">
+            <a href="#" download>Download Resume</a>
+        </div>
+        <div id="Projects">
+            <div>
+                <h2>Tic Tac Toe Game</h2>
+                <p>A Game built with HTML, CSS and JavaScript to play between friends with no adds and no account needed. This website also contains animations, sound etc.</p>
+            </div>
+            <div>
+                <h2>Currency Converter</h2>
+                <p>A website build to exchange rates b/w different country curriences. Lives rates fetches from live API's. Contain more than 150+ country code</p>
+            </div>
+        </div>
+        <div id="Grades">
+            <h2>Chitkara University</h2>
+            <p><strong>1st Sem:</strong>9.96 SCGPA</p>
+            <hr>
+            <h2>Govt. Senior Sec. School</h2>
+            <p><strong>12th Class Science:</strong> 91%</p>
+        </div>
+    </main>
+</body>
+</html>

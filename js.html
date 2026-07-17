@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var is function scoped, let & const and block scoped.
+        //let can be redeclared but can't reassign
+        //const can't be redeclared and can't reassign.
+
+        //Diff b/w regular function and arrow function.
+        //Regular function:
+        //use the 'function' keyword
+        //has it's own 'this'
+        //function declaration are hoisted so they can be called before they hoisted.
+        //have their own 'this'
+        //have their own arguments
+
+        //arrow function:
+        //syntax: use the '=>' operator
+        //doesn't have it's own 'this'
+        //doesn't have it's own arguments object
+        //arrow function aren't hoisted as functions and can't be used before declaration.
+        
+        
+        //lexical scope and clousers
+        //higher order function
+        //immediatly invoked function expression
+        //rest operator
+        
+        function sum(){ 
+            console.log(arguments);
+            return arguments[0]+arguments[1];
+        }
+        console.log(sum(4,6));
+
+        function outer(){
+            var a=5;
+
+            return function inner(){
+                a++;
+                console.log(a);
+            }
+        }
+
+        const fun=outer();
+        fun();
+        fun();
+        fun();
+
+        function printArgu(){
+            console.log(arguments);
+        }
+
+        var n="name";
+        a={
+            name: "Hemant",
+            age: 18
+        }
+        
+        console.log(a.name);  //Hemant
+        console.log(a[n]);  //Hemant
+        
+        const b=new Object();
+        b.name="Hemant Bansal";
+        b.age=18;
+        console.log(Object.keys(b));  //['name', 'age']
+        console.log(b.name);  //Hemant Bansal
+        console.log(b["name"]);
+        console.log(b["age"]);
+
+
+        Object.keys(b).forEach((item)=>console.log(b[item]));
+        console.log(Object.entries(b));  /*['name', 'Hemant Bansal'], (2) ['age', 18]*/
+
+        //JS defines 12 types of nodes, ex: element node, attribute node, text node, comment node, entity node etc.
+    
+        
+        //map create a new aarray.
+        
+    </script>
+</body>
+</html>
