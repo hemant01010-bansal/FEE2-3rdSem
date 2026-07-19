@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Prediction Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Google Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        .parent{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(72, 76, 86);
+        }
+
+        .heading{
+            color: white;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            border-bottom: 1px solid rgb(5, 23, 69);
+        }
+
+        .predict{
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .predict button{
+            background-color: rgb(81, 91, 119);
+            width: 20vw;
+            height: 7vh;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid whitesmoke;
+            color: whitesmoke;
+        }
+
+        .predict button:hover{
+            box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .predict button:active{
+            box-shadow: none;
+        }
+
+        .predictionResult{
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+        }
+
+        .predictionResult p{
+            color: white;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="heading">
+            <h2>✨Future Prediction Machine✨</h2>
+        </div>
+        <div class="predict">
+            <button onclick="generatePrediction()">Predict🔮</button>
+        </div>
+
+        <div class="predictionResult">
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+        const results= [
+            "You'll become CEO ... of your bedroom🛌.",
+            "Your lucky number is 404🚫.",
+            "🦟 A mosquito has already chosen you as today's VIP guest.",
+            "📅 Tomorrow is your lucky day. Please check again tomorrow.",
+            "💍 Wedding bells are ringing... ...for someone else.",
+            "💳 Your wallet says: ' I am on vacation.'",
+            "💸 Someone will transfer money to you...  Your bank: 'Minimum balance penalty deducted.'",
+            "🚪 Today you will enter a room... ...and instantly forget why."
+        ]
+
+        let field = document.querySelector(".predictionResult p");
+
+        function generatePrediction(){
+            let x = Math.random()*8;
+            x = Math.floor(x);
+            console.log(x);
+            field.innerText=results[x];
+        }
+    </script>
+</body>
+</html>
