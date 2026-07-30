@@ -297,42 +297,7 @@
             })
 
         }
-
-        let now = new Date();
-        console.log(now);
-        let min = now.getMinutes();
-        console.log(min);
-        
-        setTimeout(() => {
-            console.log("settimeout");
-        }, 2000);
-
-        const a = new Promise((resolve,reject)=>{
-            setInterval(()=>{
-                let a = Math.random();
-                resolve('Hi');
-            },2000);
-        })
-
-        a.then((data)=>{
-            console.log(data);
-        }).catch((error)=>{
-            console.log(error);
-        }).finally(()=>{
-            console.log('finally run always');
-        })
-
-        function getData(){
-            return new Promise(()=>{
-                setTimeout((resolve,reject)=>{
-                    resolve("Hii promise resolve")
-                },2000)
-            })
-        }
-
-        getData().then((data)=>{
-
-        })
+gi
     </script>
 </body>
 
