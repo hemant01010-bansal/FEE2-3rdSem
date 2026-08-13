@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .tasks{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .task{
+            display: flex;
+            gap: 10px;
+            background-color: antiquewhite;
+        }
+
+        .task button{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo">
+
+    </div>
+
+    <div class="tasks">
+        <div class="task">
+            <p>OOP's'</p>
+            <button>Delete</button>
+        </div>
+
+        <div class="task">
+            <p>OOP's'</p>
+            <button>Delete</button>
+        </div>
+
+    </div>
+
+    <script>
+        const todo=[];
+        const todoContainer = document.getElementsByClassName("todo");
+        console.log(todoContainer);
+        console.log(todoContainer[0]);
+        const inputTask=document.createElement("input");
+        const addButton=document.createElement("button");
+        todoContainer[0].append(inputTask,addButton);
+        addButton.innerText="ADD";
+        inputTask.placeholder="Enter Task";
+        const tasks=document.querySelector(".tasks");
+
+        inputTask.addEventListener('keydown',(e)=>{
+            if (e.key==="Enter"){
+                const task=inputTask.value;
+                addTask(task);
+            }
+        })
+
+        
+        addButton.addEventListener("click",() =>{
+            const task=inputTask.value;
+            addTask(task);
+        });
+
+        
+        let srNo=1;
+        function addTask(taskText){
+            const task=document.createElement("div");
+            task.className="task";
+            
+            const para=document.createElement("p");
+            const deleteTask=document.createElement("button");
+
+            para.innerText=srNo+". "+taskText;
+            console.log(srNo);
+            // tasks.appendChild(para);
+            inputTask.value="";
+            inputTask.placeholder="Enter Another Task:";
+            srNo++;
+
+            deleteTask.innerText="Delete";
+            // tasks.appendChild(deleteTask);
+            tasks.appendChild(task);
+            task.appendChild(para);
+            task.appendChild(deleteTask);
+
+            deleteTask.addEventListener("click",()=>{
+                task.remove();
+                srNo--;
+            })
+        }
+
+    </script>
+</body>
+</html>
