@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Google Sans", sans-serif;
+        }
+
+        nav{
+            display: flex;
+            background-color: aqua;
+            height: 7vh;
+            justify-content: space-between;
+            padding: 0px 20px 0px 20px;
+            align-items: center;
+            font-size: 18px;
+        }
+        
+        nav div{
+            display: flex;
+            gap: 20px;
+        }
+
+        nav li{
+            list-style-type: none;
+        }
+
+        main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(243, 244, 246);
+        }
+
+        .synin{
+            width: 45vw;
+            height: 45vh;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inp{}
+
+        .inp input{
+            padding: 5px;
+            border-radius: 5px;
+            border: 1.5px solid rgb(180, 178, 178);
+            font-size: 18px;
+        }
+
+        .inp input:{
+            background-color: rgb(232, 240, 254);
+        }
+
+        .login{
+            background-color: rgba(0, 0, 255, 0.849);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 75px;
+        }
+        .login button{
+            background-color: rgba(0, 0, 255, 0.849);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div><li>Code Verse</li></div>
+        <div>
+            <li>Home</li>
+            <li>Courses</li>
+            <li>About</li>
+        </div>
+        <div>
+            <i class="fa-regular fa-bell" style="color: rgb(0, 0, 0);"></i>
+        </div>
+     </nav>
+
+     <main>
+        <div class="synin">
+            <p style="font-size: 20px; font-weight: 550;">Create a account</p>
+            <p style="font-size: 14px; color: rgb(159, 159, 156);">Already Signed up? <span style="color: blue;">Log in</span></p>
+            <div class="email inp">
+                <p>Email</p>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="passw inp">
+                <p>Password</p>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <div class="login">
+                <button>Log in</button>
+            </div>
+        </div>
+     </main>
+</body>
+</html>

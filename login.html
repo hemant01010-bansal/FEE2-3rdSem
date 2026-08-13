@@ -50,7 +50,7 @@
 
         main{
             width: 100%;
-            height: 100vh;
+            height: 80vh;
             background: linear-gradient(white 40%,aqua, white);
             display: flex;
             justify-content: center;
@@ -138,9 +138,10 @@
      <main>
          <div>
             <h1>Welcome Back</h1>
-            <input placeholder="Enter your Email:" type="email">
-            <input placeholder="Enter your Password:" type="password">
-            <button type="submit">Submit</button>
+            <h1>Login</h1>
+            <input placeholder="Enter your Email:" type="email" class="emails">
+            <input placeholder="Enter your Password:" type="password" class="passwords">
+            <button type="submit" onclick="storeDetails()">Submit</button>
             <p>Forgot Password?</p>
             <p>Don't have an account? <strong style="color: rgb(187, 94, 47);">Sign Up</strong></p>
         </div>
@@ -166,5 +167,18 @@
         <i class="fa-brands fa-whatsapp" style="color: rgb(0, 0, 0);"></i>
         <i class="fa-brands fa-linkedin" style="color: rgb(0, 0, 0);"></i>
     </div>
+
+    <script>
+        localStorage.setItem('email','xyz');
+        localStorage.setItem('password','xyz');
+        const email=document.querySelector(".emails");
+        const password=document.querySelector(".passwords");
+        function storeDetails(){
+            alert(email)
+            localStorage.setItem('email',email.value);
+            localStorage.setItem('password',password.value);
+
+        }
+    </script>
 </body>
 </html>
