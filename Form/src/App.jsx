@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import LogIn from './components/LogIn'
+import Reducer from './components/reducer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,8 @@ function App() {
     <>
     <LogIn/>
     <p>App Component</p>
+    <p>Reducer Component</p>
+    <Reducer/>
     </>
   )
 }
